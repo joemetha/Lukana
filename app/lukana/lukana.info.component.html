@@ -1,100 +1,136 @@
-<!DOCTYPE html>
-<html>
-<title>Information</title>
-<body>
-<style>
-  .container {
-    position: relative;
-  }
-
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #ba6e00;
-  }
-
-  .container:hover .overlay {
-    opacity: 1;
-  }
-
-  .text {
-    color: white;
-    font-size: 20px;
-  }
-</style>
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <div class="container">
-    <img class="w3-image container image" src="/app/images/angkaew.jpg" alt="Me" width="1500" height="600" alt="Avatar">
-    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">ANG KAEW</h1>
-      <h3 class="w3-hide-medium w3-xxlarge w3-hide-small w3-text-black">RESERVOIR</h3>
-    </div>
-    <div class="overlay">
-      <div class="text w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">"Ang Kaew
-        Reservoir" located in front of Chiang Mai University. Constructed to supply water
-        for the university,
-        it is also a recreational area for Chiang Mai University students , campus residents and the local community.
-      </div>
-    </div>
+<header class="  w3-center w3-black">
+  <div class="w3-animate-top">
+    <h1 class="w3-jumbo">Information</h1>
   </div>
-
 </header>
+<div>
+  <h2 class="w3-margin-left w3-xxlarge w3-text-light-green">Ang Kaew Reservoir</h2>
+  <P class="w3-margin">"Ang Kaew Reservoir" located in front of Chiang Mai University. Constructed to supply water for
+    the university, it is also a recreational area for Chiang Mai University students , campus residents and the local
+    community.</P>
+  <p class="w3-margin-left w3-text-grey w3-right-align"> 239 Huaykaew Road, Su-thep Sub-district, Su-thep District,<br/>Chiang
+    Mai, Thailand, 50200 </p></div>
+
+<div class="slideshow-container">
+
+  <div class="fade">
+    <img src="app/images/angkaew.jpg" style="width:100%">
+</div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake1.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake2.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake3.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake5.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake6.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake7.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake8.jpg" style="width:100%">
+  </div>
+  <div class="fade mySlides">
+    <img src="app/images/the-lake9.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 <br>
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <div class="container">
-    <img class="w3-image container image" src="/app/images/cmusta.jpg" alt="Me" width="1500" height="600" alt="Avatar">
-    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">CHIANG MAI UNIVERSITY</h1>
-      <h3 class="w3-hide-medium w3-xxlarge w3-hide-small w3-text-black">MAIN STADIUM</h3>
-    </div>
-    <div class="overlay">
-      <div class="text w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">"Chiang Mai
-        University Main Stadium" are located in the center of the university.It is a place for a student to do activity,
-        e.g., outdoor sports, concerts, or other events and
-        consists of a field or stage either partly or completely surrounded by a tiered structure designed to allow
-        spectators to stand or sit and view the event.
-      </div>
-    </div>
-  </div>
-
-</header>
-<br>
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <div class="container">
-    <img class="w3-image container image" src="/app/images/cmuart.jpg" alt="Me" width="1500" height="600" alt="Avatar">
-    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-      <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">THE CMU ART</h1>
-      <h3 class="w3-hide-medium w3-xxlarge w3-hide-small w3-text-black">MUSEUM</h3>
-    </div>
-    <div class="overlay">
-      <div class="text w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">This museum is
-        the main regional art museum in the north of Thailand. In addition to providing a venue for rotating
-        contemporary art exhibitions by CMU art students and local, national and international artists, it is an
-        education centre, and a centre for the preservation of art and culture of Chiang Mai and Northern Thailand,
-        formerly named the Kingdom of Lanna. The Museum also organizes an annual international festival and publishes a
-        two-monthly art magazine.
-      </div>
-    </div>
-  </div>
-
-</header>
-
-
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
 </div>
 
-</body>
-</html>
+<script>var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var e;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (e = 0; e < slides.length; e++) {
+    slides[i].style.display = "none";
+  }
+  for (e = 0; e < dots.length; e++) {
+    dots[i].className = dots[e].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+
+<div class="board board-margin-right">
+  <a class="w3-xlarge w3-text-cyan" onclick="true"
+     href="https://www.tripadvisor.com/ShowUserReviews-g293917-d8826313-r458963611-Ang_Kaew_Reservoir-Chiang_Mai.html#REVIEWS">“Nice
+    views and a good place to relax”</a>
+  <div><p><img src="app/images/rating.png"> Reviewed February 12, 2017 <i>by Ian B</i></p></div>
+  <p>I stopped by December 2016. I wanted to get a few photos and take in the views. There is a coffee shop so you could
+    come along to relax and unwind for a while. I just rode straight in and parked up on my scooter and nobody seemed to
+    mind.</p>
+  <a onclick="true" href="app/images/the-lake1.jpg" target="_blank"><img src="app/images/icon1.jpg"></a>
+  <a onclick="true" href="app/images/the-lake2.jpg" target="_blank"><img src="app/images/icon2.jpg"></a>
+
+</div>
+
+<div class="board board-margin-left">
+  <a class="w3-xlarge w3-text-cyan" onclick="true"
+     href="https://www.tripadvisor.com/ShowUserReviews-g293917-d8826313-r454016861-Ang_Kaew_Reservoir-Chiang_Mai.html#REVIEWS">“Great
+    lake view but nothing more”</a>
+  <div><p><img src="app/images/rating.png"> Reviewed January 22, 2017 <i>by dukekev</i></p></div>
+  <p>Ang Kaew Reservoir is located in Chiang Mai University campus, but tourists are not allowed to access the campus by
+    themselves. Tourists must buy the shuttle ticket near the main entrance and the shuttle will bring you around the
+    campus with audio guide. The only stop is at Ang Kawe Reservoir which tourists have 10 minutes to take pictures
+    before getting back to the shuttle. The lake is beautiful which you can see the water reflection. But there is
+    nothing more and there is too little time to enjoy to view. Not a very worthwhile place to visit at all, given the
+    restriction like this.</p>
+  <a onclick="true" href="app/images/the-lake3.jpg" target="_blank"><img src="app/images/icon3.jpg"></a>
+  <a onclick="true" href="app/images/the-lake4.jpg" target="_blank"><img src="app/images/icon4.jpg"></a>
+  <a onclick="true" href="app/images/the-lake5.jpg" target="_blank"><img src="app/images/icon5.jpg"></a>
+</div>
+
+<div class="board board-margin-right">
+  <a class="w3-xlarge w3-text-cyan" onclick="true"
+     href="https://www.tripadvisor.com/ShowUserReviews-g293917-d8826313-r349028762-Ang_Kaew_Reservoir-Chiang_Mai.html#CHECK_RATES_CONT">““Peaceful
+    Nature at Lake Ang Kaew in CMU...””</a>
+  <div><p><img src="app/images/rating2.png"> Reviewed February 18, 2016 <i>by Jeshua T</i></p></div>
+  <p>This is by far our favorite hangout place in Chiangmai. Short walk from CMU entrance on Huay Kaew Road - you will
+    come to a specatacular view of the lake against Doi Suthep in the background...breathtaking!
+    Take a walk along the right to the end, there is a quiet patch of greens where we do our morning meditation and yoga
+    - absolutely fantastic!
+    Go early in the morning to catch the warm morning Sun, it is really delightful. There are usually a lot of tourists
+    in the afternoon although late afternoon/ early evenings around 430pm is also wonderful - if you don't mind the
+    people/ tourists walking around taking pix...
+    There is a big sign that says NO DOGS ALLOWED, despite, my lovely dog and I have been enjoying the lake (no
+    swimming) - spreading love and joy to people we meet. My dog is a very well behaved dog - absolutely adorable so
+    there had not been any complaints! ;-)</p>
+  <a onclick="true" href="app/images/the-lake6.jpg" target="_blank"><img src="app/images/icon6.jpg"></a>
+  <a onclick="true" href="app/images/the-lake7.jpg" target="_blank"><img src="app/images/icon7.jpg"></a>
+  <a onclick="true" href="app/images/the-lake8.jpg" target="_blank"><img src="app/images/icon8.jpg"></a>
+  <a onclick="true" href="app/images/the-lake9.jpg" target="_blank"><img src="app/images/icon9.jpg"></a>
+</div>
+
+
