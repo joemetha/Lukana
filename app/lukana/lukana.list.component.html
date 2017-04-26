@@ -1,4 +1,4 @@
-<div class="w3-content w3-justify w3-text-grey" id="">
+<div class="w3-content w3-justify w3-text-grey" id="" *ngIf="visual.check1==true">
 
 
   <header class="  w3-center w3-black">
@@ -10,14 +10,14 @@
   <!-- Grid for pricing tables -->
   <div class="w3-row-padding w3-center" style="margin:0 -16px">
     <div class="w3-container">
-      <a role="presentation" routerLinkActive="active" routerLink="/convert"> <button class=" w3-button w3-white w3-padding-large w3-hover-gray w3-margin-right">Convert ascendant diagram</button></a>
-      <a role="presentation" routerLinkActive="active" routerLink="/list"> <button class="w3-button w3-deep-purple  w3-center w3-padding-large w3-hover-gray">Convert a list of star and zodiac</button></a>
+      <a role="presentation" routerLinkActive="" routerLink="/convert"> <button class=" w3-button w3-white w3-padding-large w3-hover-gray w3-margin-right">Convert ascendant diagram</button></a>
+      <a role="presentation" routerLinkActive="" routerLink="/list"> <button class="w3-button w3-deep-purple  w3-center w3-padding-large w3-hover-gray">Convert a list of star and zodiac</button></a>
     </div>
 
     <div class="w3-padding-32 w3-center" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-white w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Ster numbering</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-16">Ster numbering</li>
           <li class="w3-padding-16">1 = SUN</li>
           <li class="w3-padding-16">2 = MOON</li>
           <li class="w3-padding-16">3 = MAR</li>
@@ -34,189 +34,201 @@
 
       <div class="w3-half">
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Zodiac</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-16">Zodiac</li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+        <select [(ngModel)]="visual.num1" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+                  <select [(ngModel)]="visual.num2" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
 
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+                 <select [(ngModel)]="visual.num3" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+            <select [(ngModel)]="visual.num4" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+            <select [(ngModel)]="visual.num5" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+            <select [(ngModel)]="visual.num6" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+          <select [(ngModel)]="visual.num7" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+          <select [(ngModel)]="visual.num8" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+            <select [(ngModel)]="visual.num9" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+              <select [(ngModel)]="visual.num10" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
           <li class="w3-padding-16">
-            <select name="zodiac" form="list">
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Cancer">Cancer</option>
-            </select>
+               <select [(ngModel)]="visual.num11" name="zodiac" form="list">
+          <option value="0">Select</option>
+          <option value="1">Aries</option>
+          <option value="2">Pisces</option>
+          <option value="3">Aquarius</option>
+          <option value="4">Capricornus</option>
+          <option value="5">Sagitarius</option>
+          <option value="6">Scorpio</option>
+          <option value="7">Libra</option>
+          <option value="8">Virgo</option>
+          <option value="9">Leo</option>
+          <option value="10">Cancer</option>
+          <option value="11">Gemini</option>
+          <option value="12">Taurus</option>
+        </select>
           </li>
 
 
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-padding-large w3-green w3-margin-right">Submit</button>
-            <button class="w3-button w3-red w3-padding-large " >Reset</button>
+            <p class="w3-text-red">{{message}}</p>
+            <button class="w3-button w3-padding-large w3-green w3-margin-right" (click)="submit(visual)">Submit</button>
+            <button class="w3-button w3-red w3-padding-large " (click)="reset()">Reset</button>
           </li>
         </ul>
       </div>
@@ -224,4 +236,198 @@
     </div>
     <!-- END PAGE CONTENT -->
   </div>
+</div>
+
+<!--finishconvert section -->
+
+<div class="w3-content w3-justify w3-text-grey w3-animate-fading" id="" *ngIf="visual.check2==true">
+
+ <div class="w3-row-padding w3-center" >
+  <header class="  w3-center w3-black">
+    <div class="w3-animate-top">
+      <h1 class="w3-xxlarge">Your Lukana <span class="w3-text-amber ">Diagram</span>!!</h1>
+      
+    </div>
+  </header>
+     <div class="w3-display-container">
+
+      <img src="app/images/xcxc.png" alt="bg" class="w3-padding-32 " width="600" height="500">
+
+        <div class="w3-display-area21 ">
+        <div class="w3-text-purple" *ngIf="visual.num1=='1'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='1'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='1'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='1'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='1'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='1'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='1'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='1'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='1'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='1'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='1'">ล</div>
+    </div>
+
+      <div class="w3-display-area22">
+          <div class="w3-text-purple" *ngIf="visual.num1=='2'">1</div>
+          <div class="w3-text-purple" *ngIf="visual.num2=='2'">2</div>
+          <div class="w3-text-purple" *ngIf="visual.num3=='2'">3</div>
+          <div class="w3-text-purple" *ngIf="visual.num4=='2'">4</div>
+          <div class="w3-text-purple" *ngIf="visual.num5=='2'">5</div>
+          <div class="w3-text-purple" *ngIf="visual.num6=='2'">6</div>
+          <div class="w3-text-purple" *ngIf="visual.num7=='2'">7</div>
+          <div class="w3-text-purple" *ngIf="visual.num8=='2'">8</div>
+          <div class="w3-text-purple" *ngIf="visual.num9=='2'">9</div>
+          <div class="w3-text-purple" *ngIf="visual.num10=='2'">0</div>
+          <div class="w3-text-purple" *ngIf="visual.num11=='2'">ล</div>
+      </div>
+
+      <div class="w3-display-area23">
+        <div class="w3-text-purple" *ngIf="visual.num1=='3'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='3'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='3'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='3'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='3'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='3'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='3'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='3'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='3'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='3'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='3'">ล</div>
+      </div>
+
+      <div class="w3-display-area24">
+        <div class="w3-text-purple" *ngIf="visual.num1=='4'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='4'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='4'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='4'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='4'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='4'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='4'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='4'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='4'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='4'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='4'">ล</div>
+      </div>
+
+      <div class="w3-display-area25">
+        <div class="w3-text-purple" *ngIf="visual.num1=='5'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='5'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='5'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='5'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='5'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='5'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='5'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='5'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='5'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='5'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='5'">ล</div>
+      </div>
+
+      <div class="w3-display-area26">
+        <div class="w3-text-purple" *ngIf="visual.num1=='6'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='6'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='6'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='6'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='6'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='6'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='6'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='6'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='6'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='6'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='6'">ล</div>
+      </div>
+
+      <div class="w3-display-area27">
+        <div class="w3-text-purple" *ngIf="visual.num1=='7'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='7'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='7'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='7'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='7'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='7'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='7'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='7'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='7'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='7'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='7'">ล</div>
+      </div>
+
+      <div class="w3-display-area28">
+        <div class="w3-text-purple" *ngIf="visual.num1=='8'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='8'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='8'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='8'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='8'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='8'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='8'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='8'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='8'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='8'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='8'">ล</div>
+      </div>
+
+      <div class="w3-display-area29">
+        <div class="w3-text-purple" *ngIf="visual.num1=='9'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='9'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='9'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='9'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='9'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='9'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='9'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='9'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='9'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='9'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='9'">ล</div>
+      </div>
+
+      <div class="w3-display-area30">
+        <div class="w3-text-purple" *ngIf="visual.num1=='10'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='10'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='10'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='10'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='10'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='10'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='10'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='10'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='10'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='10'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='10'">ล</div>
+      </div>
+
+      <div class="w3-display-area31">
+        <div class="w3-text-purple" *ngIf="visual.num1=='11'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='11'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='11'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='11'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='11'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='11'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='11'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='11'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='11'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='11'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='11'">ล</div>
+      </div>
+
+
+      <div class="w3-display-area32">
+        <div class="w3-text-purple" *ngIf="visual.num1=='12'">1</div>
+        <div class="w3-text-purple" *ngIf="visual.num2=='12'">2</div>
+        <div class="w3-text-purple" *ngIf="visual.num3=='12'">3</div>
+        <div class="w3-text-purple" *ngIf="visual.num4=='12'">4</div>
+        <div class="w3-text-purple" *ngIf="visual.num5=='12'">5</div>
+        <div class="w3-text-purple" *ngIf="visual.num6=='12'">6</div>
+        <div class="w3-text-purple" *ngIf="visual.num7=='12'">7</div>
+        <div class="w3-text-purple" *ngIf="visual.num8=='12'">8</div>
+        <div class="w3-text-purple" *ngIf="visual.num9=='12'">9</div>
+        <div class="w3-text-purple" *ngIf="visual.num10=='12'">0</div>
+        <div class="w3-text-purple" *ngIf="visual.num11=='12'">ล</div>
+      </div>
+
+    </div>
+
+
+        <div class="w3-container w3-padding-32">
+      
+      <button class="w3-button w3-deep-orange " (click)="close();reset()">Close</button>
+    </div>
+ </div>
 </div>

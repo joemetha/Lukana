@@ -113,6 +113,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-display-area11{position:absolute;top:30%;left:42%;transform:translate(-42%,-30%);-ms-transform:translate(-42%,-30%)}
 .w3-display-area12{position:absolute;top:23%;left:46%;transform:translate(-46%,-23%);-ms-transform:translate(-46%,-23%)}
 
+
+.w3-display-area21{position:absolute;top:23%;left:50%;transform:translate(-50%,-23%);-ms-transform:translate(-50%,-23%)}
+
+.w3-display-area22{position:absolute;top:23%;left:57%;transform:translate(-57%,-23%);-ms-transform:translate(-57%,-23%)}
+.w3-display-area23{position:absolute;top:30%;left:62%;transform:translate(-62%,-30%);-ms-transform:translate(-62%,-30%)}
+.w3-display-area24{position:absolute;top:45%;left:62%;transform:translate(-62%,-45%);-ms-transform:translate(-62%,-45%)}
+.w3-display-area25{position:absolute;top:63%;left:62%;transform:translate(-62%,-63%);-ms-transform:translate(-62%,-63%)}
+.w3-display-area26{position:absolute;top:70%;left:57%;transform:translate(-57%,-70%);-ms-transform:translate(-57%,-70%)}
+
+.w3-display-area27{position:absolute;top:70%;left:50%;transform:translate(-50%,-70%);-ms-transform:translate(-50%,-70%)}
+
+.w3-display-area28{position:absolute;top:70%;left:43%;transform:translate(-43%,-70%);-ms-transform:translate(-43%,-70%)}
+.w3-display-area29{position:absolute;top:63%;left:38%;transform:translate(-38%,-63%);-ms-transform:translate(-38%,-63%)}
+.w3-display-area30{position:absolute;top:45%;left:38%;transform:translate(-38%,-45%);-ms-transform:translate(-38%,-45%)}
+.w3-display-area31{position:absolute;top:30%;left:38%;transform:translate(-38%,-30%);-ms-transform:translate(-38%,-30%)}
+.w3-display-area32{position:absolute;top:23%;left:43%;transform:translate(-43%,-23%);-ms-transform:translate(-43%,-23%)}
+
 .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .w3-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
@@ -273,8 +290,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   left: 0%;
 }
 .w3-opacity-mid{opacity:0.5}
-<<<<<<< HEAD
-=======
 
 video { 
     position: fixed;
@@ -357,4 +372,3 @@ a:hover{
   #bgvid { display: none; }
 }
 
->>>>>>> parent of a01f442... Update Information เสร็จแล้วเด้อออออออออออออออออออออ
