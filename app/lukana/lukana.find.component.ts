@@ -15,7 +15,7 @@ export class LukanaFindComponent {
     this.zodiac.check2=false;
     this.zodiac.value1="0";
     this.zodiac.value2="0";
-    this.zodiac.name="xxx";
+    this.zodiac.name="";
 
     this.zodiac.web1=false;
     this.zodiac.web2=false;
@@ -60,7 +60,7 @@ this.zodiac.image="app/images/pisces.png";
       if(this.zodiac.value1==1 && this.zodiac.value2==5 || this.zodiac.value1==2 && this.zodiac.value2==4 || this.zodiac.value1==3 && this.zodiac.value2==3 ||this.zodiac.value1==4 && this.zodiac.value2==2 ||this.zodiac.value1==5 && this.zodiac.value2==1 ||this.zodiac.value1==6 && this.zodiac.value2==12 ||this.zodiac.value1==7 && this.zodiac.value2==11 ||this.zodiac.value1==8 && this.zodiac.value2==10 || this.zodiac.value1==9 && this.zodiac.value2==9 ||this.zodiac.value1==10 && this.zodiac.value2==8 ||this.zodiac.value1==11 && this.zodiac.value2==7 ||this.zodiac.value1==12 && this.zodiac.value2==6){
       this.zodiac.name="Taurus";
       this.zodiac.descripton="The element of Wind, the people who were born on May,16 to June,15. Taurus is the ascendant of patient and change. The people who were born in Taurus likely to struggle to gain a success in their life.";
-    this.zodiac.image="app/images/gemini.png";  
+    this.zodiac.image="app/images/xxx.png";  
   }
       if(this.zodiac.value1==1 && this.zodiac.value2==6 || this.zodiac.value1==2 && this.zodiac.value2==5 || this.zodiac.value1==3 && this.zodiac.value2==4 ||this.zodiac.value1==4 && this.zodiac.value2==3 ||this.zodiac.value1==5 && this.zodiac.value2==2 ||this.zodiac.value1==6 && this.zodiac.value2==1 ||this.zodiac.value1==7 && this.zodiac.value2==12 ||this.zodiac.value1==8 && this.zodiac.value2==11 || this.zodiac.value1==9 && this.zodiac.value2==10 ||this.zodiac.value1==10 && this.zodiac.value2==9 ||this.zodiac.value1==11 && this.zodiac.value2==8 ||this.zodiac.value1==12 && this.zodiac.value2==7){
       this.zodiac.name="Germini";
@@ -116,65 +116,57 @@ this.zodiac.image="app/images/pisces.png";
     this.message="";
   }
 
-  goMap(){
-    if(this.zodiac.name=="Capricornus"){
-      this.zodiac.check1=false;
+  goMap(zodiac:Zodiac){
+       this.zodiac.check1=false;
     this.zodiac.check2=false;
+
+    if(this.zodiac.name=="Capricornus"){
+   
       this.zodiac.web1=true;
     }
-        if(this.zodiac.name=="Aquarius"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+       else if(this.zodiac.name=="Aquarius"){
+   
       this.zodiac.web2=true;
+      
     }
-        if(this.zodiac.name=="Pisces"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+      else  if(this.zodiac.name=="Pisces"){
+  
       this.zodiac.web3=true;
     }
-        if(this.zodiac.name=="Aries"){
-     this.zodiac.check1=false;
-    this.zodiac.check2=false;
+      else  if(this.zodiac.name=="Aries"){
+ 
       this.zodiac.web4=true;
     }
-        if(this.zodiac.name=="Taurus"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+     else   if(this.zodiac.name=="Taurus"){
+
       this.zodiac.web5=true;
     }
-        if(this.zodiac.name=="Germini"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+     else   if(this.zodiac.name=="Germini"){
+
       this.zodiac.web6=true;
     }
-        if(this.zodiac.name=="Cancer"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+     else   if(this.zodiac.name=="Cancer"){
+   
       this.zodiac.web7=true;
     }
-        if(this.zodiac.name=="Leo"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+      else  if(this.zodiac.name=="Leo"){
+
       this.zodiac.web8=true;
     }
-        if(this.zodiac.name=="Virgo"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+     else   if(this.zodiac.name=="Virgo"){
+
       this.zodiac.web9=true;
     }
-        if(this.zodiac.name=="Libra"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+      else  if(this.zodiac.name=="Libra"){
+
       this.zodiac.web10=true;
     }
-            if(this.zodiac.name=="Scorpio"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+       else     if(this.zodiac.name=="Scorpio"){
+
       this.zodiac.web11=true;
     }
-            if(this.zodiac.name=="Sagittaius"){
-      this.zodiac.check1=false;
-    this.zodiac.check2=false;
+         else   if(this.zodiac.name=="Sagittaius"){
+
       this.zodiac.web12=true;
     }
 

@@ -84,7 +84,7 @@
   <header class="  w3-center">
     <div class="">
       <h1 class="w3-xxlarge">Your zodiac ascendant is <span class="w3-text-amber">{{zodiac.name}}  </span> </h1>
-      <img [src]="zodiac.image" alt="bg" class="w3-padding-32 " width="250" height="300">
+      <img [src]="zodiac.image" alt="bg" class="w3-padding-32 " width="250" height="310">
       <p>{{zodiac.descripton}}</p>
       </div>
       </header>
@@ -103,7 +103,7 @@
   <div class="w3-content w3-center">
   <header class="  w3-center">
     <div class="">
-      <p class="w3-xxlarge">Find the ascendant temple map of  <span class="w3-text-amber">{{zodiac.name}}  </span> </p>
+      <p class="w3-xlarge">Find the ascendant temple map of  <span class="w3-text-deep-purple">{{zodiac.name}}  </span> </p>
       </div>
       </header>
 
@@ -111,7 +111,7 @@
 
        <div class="w3-container w3-padding-32">
       
-      <button class="w3-button  w3-amber1 " (click)="goMap()">Click here!!</button>
+      <button class="w3-button  w3-amber1 " (click)="goMap(zodiac)">Click here!!</button>
     </div>
   </div>
 
@@ -123,6 +123,7 @@
   
 
 </div>
+
 
 <div *ngIf="zodiac.web1==true">
 
@@ -173,22 +174,22 @@
 
         </div>
 
-        <!-- END PAGE CONTENT -->
+        
     </div>
 
 </div>
-
+</div>
+<!-- END PAGE CONTENT -->
 
 
 
 
 <div *ngIf="zodiac.web2==true">
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" >
+    <div class="w3-main w3-padding-large w3-text-white" id="polina3" >
 
     <!-- Header -->
-    <header class="w3-container w3-center" id="home">
+    <header class="w3-container w3-center">
         <h1 class="w3-jumbo"><b>Wat Ban Den (Wat Bandensali Si Mueang Kaen)</b></h1>
     </header>
     <!-- About Section -->
@@ -236,21 +237,23 @@
 
         <!-- END PAGE CONTENT -->
     </div>
+	</div>
+
 
 </div>
-</div>
+
+<!-- END PAGE CONTENT -->
+
 
 <div *ngIf="zodiac.web3==true">
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+<div class="w3-main w3-padding-large w3-text-white" id="polina3">
 
     <!-- Header -->
-    <header class="w3-container w3-center" id="home">
+    <header class="w3-container w3-center" >
         <h1 class="w3-jumbo"><b>Wat Bua Kwan</b></h1>
     </header>
     <!-- About Section -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <div class="w3-content w3-justify  w3-padding-32" id="about">
         <h2>About</h2>
         <hr class="w3-opacity">
         <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Bua Kwan is an ancient temple from the era of King Rama V. Nowadays it is
@@ -294,7 +297,444 @@
 
         <!-- END PAGE CONTENT -->
     </div>
-</div>
+	</div>
 
 
 </div>
+
+<!-- END PAGE CONTENT -->
+
+<div *ngIf="zodiac.web4==true">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center">
+        <h1 class="w3-jumbo"><b>Statue Of Queen Chamadevi</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Statue of Queen Chamadevi is situated in Naimueang Sub-district. It is near
+            Nongdork public garden and far from the city hall about 1 km. It was built for commemoration of Queen
+            Chammadevi who is the first king of Hariphunchai. When the statue was completely constructed, it was placed
+            here at 5 September B.E.2525 and H.R.H. Crown prince came to open the statue at 2 October B.E.2525.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When you come here, you will see a brick sign telling you that you have
+            already arrived your destination.
+            Then, you will see the statue. Queen Chamadevi is standing elegantly. There is a legend said if you are not
+            lucky in love, come here and pray. Then, what you want will become true. After praying, you can enjoy a lot
+            of interesting things around here such as elephant statue, war horse statue and pictures showing history of
+            Hariphunchai. The first picture is the time when Queen Chamadevi ruled the city. The second is the picture
+            of King Atidtayarad and the origin of PhratadHariphunchai. Next, the picture tells a story of King Suppasit
+            and the faith in Buddhism. The fifth picture is the time when KingMungrai attacked the city. The attack
+            leads to next picture which shows that Hariphunchai is a part of Chiangmai. Another picture is the time when
+            Hariphunchai is the colony of Siam. The last one is the picture of the city that was merged into Siam and
+            became one of the cities in Thailand now.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the past, Hariphunchai was built by Wasutep Hermit and Sukkatunda Hermit
+            but they want to continue
+            praying and do not want to rule the city. Therefore, after building, they look for an appropriate person to
+            rule the city instead of them. At that time, Queen Chamadevi,the daughter of King Lawo, is the most
+            appropriate one because she is a good, knowledgeable and brave person. Hence, those two hermits went to ask
+            her to rule the city. After ruling, in order to develop the city and spread Buddhism, she brought many
+            monks, philosophers, knowledgeable people in a variety fields and artists. This makes the city near Ping
+            river develop very fast in every way.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Nai
+                    Mueang Sub-District , Mueang District , Lamphun 51000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7563.814679498686!2d98.9969841724679!3d18.57821574950156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dbcd5c82a27829%3A0x1cbe10e2ef33ac70!2z4Lit4LiZ4Li44Liq4Liy4Lin4Lij4Li14Lii4LmM4Lie4Lij4Liw4LiZ4Liy4LiH4LiI4Liy4Lih4LmA4LiX4Lin4Li1!5e0!3m2!1sth!2sth!4v1493198639964"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+	</div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+<div *ngIf="zodiac.web5==true">
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" >
+        <h1 class="w3-jumbo"><b>Wat Pa-Dhammasopon</b></h1>
+    </header>
+
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content " id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Phrommat Sub-District , Mueang
+                    District , Suphan Buri 15000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15429.239342189258!2d100.613683!3d14.807859!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf39276490e42112!2z4Lin4Lix4LiU4Lib4LmI4Liy4LiY4Lij4Lij4Lih4LmC4Liq4Lig4LiT!5e0!3m2!1sth!2sth!4v1493200874800"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+<div *ngIf="zodiac.web6==true">
+<div class="w3-main w3-padding-large"  id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" id="home">
+        <h1 class="w3-jumbo"><b>Wat Khae</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-padding-32">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Khae, which was mentioned in the Thai literary epic “Khun
+            Chang-KhunPhaen”, is home to a thousand year-old tamarind tree. In the story, it is believed that Master
+            Khong taught the art of magic to folkloric protagonist Khun Phaen, who then transformed tamarind leaves into
+            wasps and hornets to fight his enemies. Nearby the tree is “Khum Khun Phaen”, a traditional Thai house built
+            as part of a literature and historical conservation park.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The temple also houses special antiques such as replicas of the Lord Buddha’s
+            footprints called “Phra
+            Phutthabat Si Roi”. They comprise four footprints, each overlapping over the others. The footprints are made
+            from brass and measure 1.40 meters wide and 2.80 meters long. There is also a Buddha image seated in the
+            gesture of subduing Mara, clad in a robe decorated with beautiful flowers, originating from the Rattanakosin
+            period. Other antiques include a brass bell, a brass boiler for boiling robe dye, and a Thai-style bookcase,
+            which were donated in 1869 by King Rama V.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Rua Yai Sub-District , Mueang
+                    District , Suphan Buri 72000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15451.80225194451!2d100.1172142!3d14.4875275!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfae7d7c52f4a78c5!2z4Lin4Lix4LiU4LmB4LiEIOC4quC4uOC4nuC4o-C4o-C4k-C4muC4uOC4o-C4tQ!5e0!3m2!1sth!2sth!4v1493200606834"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+	</div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+<div *ngIf="zodiac.web7==true">
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" >
+        <h1 class="w3-jumbo"><b>Wat Khlong Wan</b></h1>
+    </header>
+
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content " id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Khlong Wan Sub-District , Mueang
+                    District , Prachuap Khiri Khan 77000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15624.84401173755!2d99.7894234!3d11.7501805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5d90977480ff2f4!2z4Lin4Lix4LiU4LiE4Lil4Lit4LiH4Lin4Liy4LisKOC4nuC4o-C4sOC4reC4suC4o-C4suC4oeC4q-C4peC4p-C4hyk!5e0!3m2!1sth!2sth!4v1493201944483"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+
+<div *ngIf="zodiac.web8==true">
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" >
+        <h1 class="w3-jumbo"><b>Wat Loi Kroh</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Loi Kroh is a temple located on Loi Kroh Road 65. Although
+            the temple is on a tourist street, very few tourists visit Wat Loi Kroh. The temple has a very interesting
+            history though. It was constructed in the year 1456 (2000 B.E,) during the reign of King Kue Na, the 6th
+            king of the Mengrai Dynasty of the Lanna Kingdom . This was an Indianized state centered in present-day
+            Northern Thailand from the 13th to 18th centuries. Between 1558 and 1774 Chiang Mai was part of a Burmese
+            kingdom.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 1774 Prince Kawila of Lampang liberated Chiang Mai after many years of
+            bloody struggle. The Burmese
+            occupation and years of warfare left Chiang Mai deserted and in ruins. In 1802 Prince Kawila paid homage to
+            the King of Siam and became the new ruler of Chiang Mai.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The rule of Kawila is known as the period of the reconstruction of Chiang Mai.
+            He started repopulating
+            Chiang Mai and Lamphun. This was the period of “gathering and putting vegetables into the basket and
+            gathering and relocating people into the town” (เก็บผักใส่ซ้าเก็บข้าใส่เมือง). While reconstructing Chiang
+            Mai and Lamphun, Kawila and his troops went around the neighbouring city-states in the region persuading and
+            forcibly convincing people to come and live in the two cities. In this way, Kawila was able to spread his
+            sovereignty over Chiang Tung, Chiang Rung, and various townships in Sibsong Panna, and a number of towns in
+            the Salween valley.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 1804, Kawila retook Chiang Saen from the Konbaung dynasty, the last dynasty
+            that ruled Burma from 1752 to
+            1885. It is probably around that time that villagers from Ban Hom, a settlement near Chiang Saen migrated to
+            the Loi Kroh area and started reconstructing Wat Loi Kroh. Wat Loi Kroh features in our markets and silver
+            tours.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Loi Kroh Road , Phra Singha Sub-District , Mueang
+                    District , Chiang Mai 50100</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.302681642019!2d98.99462151489675!3d18.784659587255785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3aa6cfb8dfb5%3A0x19bdc1b34a84f7d8!2z4Lin4Lix4LiU4Lil4Lit4Lii4LmA4LiE4Lij4Liy4Liw4Lir4LmM!5e0!3m2!1sth!2sth!4v1493197873934"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+	</div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+<div *ngIf="zodiac.web9==true">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" >
+        <h1 class="w3-jumbo"><b>Wat Nang Pra Ya</b></h1>
+    </header>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content " id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Pak Nakhon Sub-District , Mueang
+                    District , Nakhon Si Thammarat 80000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.601725051652!2d100.02414761478241!3d8.440713093930274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305303862b17fcb3%3A0x2764c0464798c40c!2z4Lin4Lix4LiU4LiZ4Liy4LiH4Lie4Lij4Liw4Lii4Liy!5e0!3m2!1sth!2sth!4v1493199276863"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+
+<div *ngIf="zodiac.web10==true">
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center">
+        <h1 class="w3-jumbo"><b>Wat Phra Sri Mahathat</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-padding-32" >
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Phra Si Mahathat was built when Field Marshal Plaek Pibulsongkram was
+            Prime Minister. The Cabinet had agreed to build and name it as Democracy Temple. During the construction,
+            Rear Admiral Thawal Thamrong Navaswadhi went to India to ask for the Lord Buddha’s relics, five branches of
+            the Bhodi and some soil from the place where the Lord Buddha attained his enlightenment to keep in this
+            temple. Hence, the temple was later named as Wat Phra Si Mahathat.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The significant architecture is Phra Chedi Si Mahathat. There is a small chedi
+            keeping the Lord Buddha’s
+            relics. All along the wall are small spaces for keeping the ashes of benevolent people who have done good
+            for the country. The principal Buddha image, Phra Si Samphutthamuni in the subduing Mara gesture built
+            during the Sukhothai Period is located in the main chapel. The image was invited from Bowonsathan Mongkhon
+            Palace or the Front Palace.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>149 , Phahonyothin Road , Khwaeng Anusawari , Bang Khen
+                    District , Bangkok 10220 </p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15493.678245289073!2d100.5942195!3d13.8738431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x76c76ff8c5407633!2z4Lin4Lix4LiU4Lie4Lij4Liw4Lio4Lij4Li14Lih4Lir4Liy4LiY4Liy4LiV4Li44Lin4Lij4Lih4Lir4Liy4Lin4Li04Lir4Liy4Lij!5e0!3m2!1sth!2sth!4v1493202594119"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+	</div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+
+<div *ngIf="zodiac.web11==true">
+
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" >
+        <h1 class="w3-jumbo"><b>Wat Phukhao Thong</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify  w3-padding-32">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Phukhao Thong is located 2 kilometers northwest of the royal palace.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khamhaikan Chao Krungkao (Testimony by the People from the Old Kingdom) manifested that Phrachao Bhureng
+            Noung of Hongsawadi commanded the construction of a gigantic Mon-style pagoda to commemorate his victory
+            after the successful siege of Ayutthaya. However, as the Burmese army returned to its home country, merely
+            the pagoda base was built. After Somdet Phra Naresuan Maharat declared the independence of Ayutthaya in
+            1584, he gave the royal command to superimpose a Thai-style pagoda on the large Mon-style base at Thung
+            Makham Yong. It can be said that the uniqueness of the pagoda is the combination of 2 architectural styles.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Formerly, Chedi Phukhao Thong is a massive pagoda towering in the middle of paddy fields and can be seen
+            from afar. Therefore, the temple adjacent to this pagoda was also given the similar name: Wat Phukhao Thong.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Public Works and Town & Country Planning collaborated with the Fine Arts Department to erect
+            the equestrian statue of King Naresuan in front of Wat Phukhao Thong. It is situated very close to Queen Sri
+            Suriyothai Monument which has been built earlier by Department of Public Works and Town & Country Planning.
+            The area mainly features an open space of flood-plains and moulds, so it became major battlefields between
+            Thai and Burmese armies in both periods, including the fights on elephants’ backs.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is unfortunate that the temple was abandoned after the 2nd collapse of Ayutthaya kingdom. However, Phra
+            Maha Chedi still maintains its religious significance, as mentioned in Nirat Phukhao Thong written by
+            Sunthorn Phu during the reign of King Rama III. Several visitors nowadays, likewise, go there for
+            veneration.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is not until the year 1957 that monks are allowed to reside at the temple again.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  Phukhao Thong Sub-District , Phra Nakhon Si Ayutthaya
+                    District , Phra Nakhon Si Ayutthaya 13000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3865.0198806259573!2d100.53723451483758!3d14.36826168995077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2747b251ebe47%3A0xbd892764365a86f9!2z4Lin4Lix4LiU4Lig4Li54LmA4LiC4Liy4LiX4Lit4LiH!5e0!3m2!1sth!2sth!4v1493200240955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+	</div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
+
+
+
+
+<div *ngIf="zodiac.web12==true">
+<div class="w3-main w3-padding-large" id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" >
+        <h1 class="w3-jumbo"><b>Wat Phra Sing</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-padding-32" >
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Located on Sam Lan Road, Wat Phra Sing’s Wihan Lai Kham is home to Phra
+            Phutthasihing, Chiang Mai’s most sacred, Chiang sean-style Buddha image. During the Songkran festival, every
+            April 13-15, Phra Phutthasihing is carried in a parade procession around town so locals can bath the image
+            with scented water, which brings good luck according to a traditional belief.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content " id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Sri Phum Sub-District , Mueang
+                    District , Chiang Mai 50200</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.2143578751698!2d98.97913551489677!3d18.788598087253437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a9b6e4a246f%3A0x9656d9e717cd54e9!2z4Lin4Lix4LiU4Lie4Lij4Liw4Liq4Li04LiH4Lir4LmM!5e0!3m2!1sth!2sth!4v1493198871200"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+	</div>
+
+
+</div>
+
+<!-- END PAGE CONTENT -->
