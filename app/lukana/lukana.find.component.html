@@ -4,7 +4,7 @@
 
 <source src="app/images/HomeFootage.mp4" type="video/mp4">
 </video>
-<div id="polina" class="w3-padding-32">
+<div id="polina" class="w3-padding-32" *ngIf="zodiac.check1==true">
 <div class="w3-content w3-center">
   <header class="  w3-center">
     <div class="">
@@ -18,7 +18,8 @@
       <div class="w3-cell">
         <p class="w3-text-light-grey">Birth date</p>
 
-        <select>
+        <select [(ngModel)]="zodiac.value1">
+          <option value="0">Select</option>
           <option value="1">15 Jan - 12 Feb</option>
           <option value="2">13 Feb - 13 Mar</option>
           <option value="3">14 Mar - 12 Apr</option>
@@ -37,19 +38,20 @@
       <div class=" w3-cell">
         <p class="w3-text-light-grey">Birth time</p>
 
-        <select>
-          <option value="0">05.00 - 07.00</option>
-          <option value="1">07.00 - 09.00</option>
-          <option value="2">09.00 - 11.00</option>
-          <option value="3">11.00 - 13.00</option>
-          <option value="4">13.00 - 15.00</option>
-          <option value="5">15.00 - 17.00</option>
-          <option value="6">17.00 - 19.00</option>
-          <option value="7">19.00 - 21.00</option>
-          <option value="8">21.00 - 23.00</option>
-          <option value="9">23.00 - 01.00</option>
-          <option value="10">01.00 - 03.00</option>
-          <option value="11">03.00 - 05.00</option>
+        <select [(ngModel)]="zodiac.value2">
+          <option value="0">Select</option>
+          <option value="1">05.00 - 07.00</option>
+          <option value="2">07.00 - 09.00</option>
+          <option value="3">09.00 - 11.00</option>
+          <option value="4">11.00 - 13.00</option>
+          <option value="5">13.00 - 15.00</option>
+          <option value="6">15.00 - 17.00</option>
+          <option value="7">17.00 - 19.00</option>
+          <option value="8">19.00 - 21.00</option>
+          <option value="9">21.00 - 23.00</option>
+          <option value="10">23.00 - 01.00</option>
+          <option value="11">01.00 - 03.00</option>
+          <option value="12">03.00 - 05.00</option>
 
         </select>
 
@@ -60,16 +62,239 @@
     </div>
 
     <div class=" w3-center  w3-padding-32">
-      <button class="w3-button  w3-amber1 ">Submit</button>
-      <button class="w3-button w3-deep-orange ">Reset</button>
+      <p class="w3-text-red">{{message}}</p>
+      <button class="w3-button  w3-amber1 " (click)="submit(zodiac)">Submit</button>
+      <button class="w3-button w3-deep-orange " (click)="reset(zodiac)">Reset</button>
     </div>
 
   </div>
 
 
-  <!-- End Portfolio Section -->
+  
 </div>
 
 </div>
 
+<!-- End find Section -->
 
+<div  class="w3-padding-32 w3-animate-fading" *ngIf="zodiac.check2==true">
+ 
+<div id="polina333" class="w3-cell findleft">
+  <div class="w3-content w3-center">
+  <header class="  w3-center">
+    <div class="">
+      <h1 class="w3-xxlarge">Your zodiac ascendant is <span class="w3-text-amber">{{zodiac.name}}  </span> </h1>
+      <img [src]="zodiac.image" alt="bg" class="w3-padding-32 " width="250" height="300">
+      <p>{{zodiac.descripton}}</p>
+      </div>
+      </header>
+
+      
+
+       <div class="w3-container w3-padding-32">
+      
+      <button class="w3-button w3-deep-orange " (click)="close();reset()">Close</button>
+    </div>
+
+  </div></div>
+
+
+<div id="polina1" class="w3-cell  right findright">
+  <div class="w3-content w3-center">
+  <header class="  w3-center">
+    <div class="">
+      <p class="w3-xxlarge">Find the ascendant temple map of  <span class="w3-text-amber">{{zodiac.name}}  </span> </p>
+      </div>
+      </header>
+
+      
+
+       <div class="w3-container w3-padding-32">
+      
+      <button class="w3-button  w3-amber1 " (click)="goMap()">Click here!!</button>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+  
+
+</div>
+
+<div *ngIf="zodiac.web1==true">
+
+<!-- Sidebar with image -->
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large " id="polina3">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" id="home">
+        <h1 class="w3-jumbo"><b>Wat Phra That Hariphunchai</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2 class="w3-text-white">About</h2>
+        <hr class="w3-opacity">
+        <p class="w3-text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Phra That Hariphunchai's earliest origins were in 897 when the then king of Hariphunchai is said to have
+            built a stupa (now the central stupa) to house a hair of the Buddha. The present compound, founded by
+            Hariphunchai King Athitayarai, dates from 1044.
+<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The temple was first rebuilt in 1443 by King Tilokaraja of Lanna kingdom Chiang Mai. The temple's
+            pyramid-shaped Chedi Suwanna was built in 1418. In the 1930s temple renovations were made by the northern
+            Thai monk Khru Ba Sriwichai.
+<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Situated in the heart of the town, WatPhra That Hariphunchai was built during the reign of King
+            Arthitayarat, a descendant of Queen Chamthewi some 800 years ago. One of itsmost noteworthy landmarks is the
+            46-meter tall golden Chedi or Buddhist stupa, whose present featuresare the result of careful restoration
+            work in 1443 by a Chiang Mai king. The temple has long been regarded as an important place of Buddhist
+            worship.
+<br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other architectural works include the temple’s ancient-style brick arch, which is adorned with fine designs,
+            and the pair of sculptured lions at the door. There is also a square-shaped Chedi and a Khmer-style Buddha
+            statue.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2 class="w3-text-white">Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p class="w3-text-white"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Intha Yongyot Road , Nai
+                    Mueang Sub-District , Mueang District , Lamphun 51000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.927403262462!2d99.00571801489357!3d18.577311387375946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30dbcd5981096c87%3A0x5fe6427cf8d3de23!2z4Lin4Lix4LiU4Lie4Lij4Liw4LiY4Liy4LiV4Li44Lir4Lij4Li04Lig4Li44LiN4LiK4Lix4Lii4Lin4Lij4Lih4Lir4Liy4Lin4Li04Lir4Liy4Lij!5e0!3m2!1sth!2sth!4v1493195948079"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</div>
+
+
+
+
+
+<div *ngIf="zodiac.web2==true">
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" >
+
+    <!-- Header -->
+    <header class="w3-container w3-center" id="home">
+        <h1 class="w3-jumbo"><b>Wat Ban Den (Wat Bandensali Si Mueang Kaen)</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Bandensali Si Mueang Kaen, also known as Wat Banden and formerly as Wat
+            Ribunrueang, is located in Inthakhin Subdistrict, Mae Taeng District, Chiang Mai. Surrounded by beautiful
+            landscapes, the temple stands prominently on top of a small hill and can be easily seen afar. Under the
+            small hill is a sacred cave the villagers pay their respect to; as a result, it is named “Wat Banden”. In
+            addition, on the temple’s ground there are lots of sacred fig trees, or Sali Trees, of various sizes.
+            Because the trees’ name, Sali, is considered auspicious, the temple was named after them. Apart from that,
+            since it is located in the area of an ancient town known as “Mueang Kaen”, the locals officially call it
+            “Wat Bandensali Si Mueang Kaen”. In 1804, Kruba Thueang Natsilo, a former abbot, had the temple renovated.
+            It then became more exquisite with Lanna-style architecture. The abbot intended to turn it into a beautiful
+            place of worship with religious teachings. This could attract more people to the temple so that they would
+            have a chance to learn about the religion. He also wanted to make the temple a place where people can find
+            their peace of mind rather than a venue for religious rituals. It is also a place for worshipping the stupas
+            of the twelve Chinese zodiacs. Its major structures include Ubosot, the main hall; Ho Trai, the scripture
+            hall; the drum tower; Wihan Sao Inthakhin, the sacred pillar shrine; the Lanna-style teak wood Kuti, a
+            monk’s house; the Wihan and the stupa. As Kruba Thueang was a good and well-behaved monk, people respected
+            him and make donations to support him turning the temple into an exquisite and magnificent place of worship.
+            Not so long after, it became widely known.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To get to the temple, take the same route as Mae Ngat Dam, the Chiang Mai-Samoeng or Chiang Mai-Fang tourist
+            route. Drive along the highway no. 107, past the Mae Malai Intersection until you reach Mae Taeng Town. Turn
+            right onto the route to Mae Ngat Dam. Drive along the road. After reaching a stadium, you will see Wat
+            Banden’s sign on the left side. Follow the sign, drive along the road about a kilometre and you will reach
+            Wat Bandensali Si Mueang Kaen. The temple is 30 kilometres away from the city of Chiang Mai. </p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Inthakin Sub-District , Mae Taeng
+                    District , Chiang Mai 50150</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.8695336290293!2d98.97725801490238!3d19.157187387041407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da1028229e1e93%3A0xf4ddaafe98cc4d0f!2z4Lin4Lix4LiU4LmA4LiU4LmI4LiZ4Liq4Liw4Lir4Lil4Li14Lio4Lij4Li14LmA4Lih4Li34Lit4LiH4LmB4LiB4LiZICjguKfguLHguJTguJrguYnguLLguJnguYDguJTguYjguJkp!5e0!3m2!1sth!2sth!4v1493199964295" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</div>
+</div>
+
+<div *ngIf="zodiac.web3==true">
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Header -->
+    <header class="w3-container w3-center" id="home">
+        <h1 class="w3-jumbo"><b>Wat Bua Kwan</b></h1>
+    </header>
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="w3-opacity">
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Bua Kwan is an ancient temple from the era of King Rama V. Nowadays it is
+            the third grade royal temple
+            in Thailand.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Orginally, this temple was just a house of the priest. However, when the
+            number of monks started to
+            increase, it was transformed into a temple on 24th June 1892 named “Wat Sakae” initiated by Prakru
+            Preechachalerm from Wat Chalermprakiat Voraviharn and was also honoured as the first abbot. After that in
+            year 1948, Pra Atikarn Payoong Jattamalo from Wat Kampaeng was invited to be the abbot after the previous
+            abbot passed away. This temple has been restored since then until Mr.Bua Choonchiew donated a land to the
+            temple. Then, the temple’s name was changed to Wat Bua Kwan in order to honour the donator. This temple was
+            granted a royal temple on 24th June 1963 with Pra Payoong Jattamalo as the abbot until 1977, Pra Boonchuay
+            Poonyakootto as the abbot in 1992.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pra Mahasawai Sukvaro, the abbot of Wat Bangpraeknhua, was the abbot of this
+            temple since 1994 and has
+            restored this temple and has supported the Dhamma studying in this temple. This temple was the first Dhamma
+            school of Nonthaburi province and also the place to practice Dhamma for Buddhism on holidays. Moreover, this
+            temple is always the host for Buddhist activities on important events.
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wat Bua Kwan was offered the third class royal temple on 29th June 2008 and on
+            14th December 2012, the abbot
+            of this temple was granted the position of the vice dean of Nonthaburi province.</p>
+        <!-- Google Map -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+            <h2>Contact</h2>
+            <hr class="w3-opacity">
+
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bang Khen Sub-District , Mueang
+                    District , Nonthaburi 11000</p>
+            </div>
+            <div class="w3-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.4938755134294!2d100.53271151483177!3d13.869391790271411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29cab7c80eb7b%3A0x10c6249f6c52529!2z4Lio4Liy4Lil4Liy4LiB4Liy4Lij4LmA4Lib4Lij4Li14Lii4LiNIOC4p-C4seC4lOC4muC4seC4p-C4guC4p-C4seC4jQ!5e0!3m2!1sth!2sth!4v1493197453379"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+</div>
+
+
+</div>

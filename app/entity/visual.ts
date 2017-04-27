@@ -12,4 +12,6 @@ export class Visual{
   num11 :string;
   check1:boolean;
   check2:boolean;
+image :string;
+
 }
